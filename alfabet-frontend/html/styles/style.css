@@ -1,0 +1,21 @@
+p {
+    max-width: 500px;
+}
+
+.formitem_box input {
+    height: 120px;
+    width: 500px;
+
+
+}
+
+.formitem_box textarea{
+    width: 500px;
+    height: 150px;
+}
+
+.formitem_url input {    
+    width: 500px;
+
+
+}

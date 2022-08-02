@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stateralfabet</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/index.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Stateralfabet</h1>
+    <hr>
+    <div id="overzicht">
+        <!-- Hier komen de lemma's te staan. !-->
+    </div>
+    <div id="formulier">
+        <h2>Lemma toevoegen</h2>
+        <form id="form-lemma-toevoegen" onsubmit="return sendData()">
+            <div class="formitem">
+                <input type="text" id="naam" placeholder="Stater" class="inputfield" required>
+
+            </div>
+<br>
+            <div class="formitem_box">
+                <textarea id="beschrijving" placeholder="Bedrijf waar ik werk. Stater levert hypothecaire diensten en platformen voor externe geldgevers en beheert 40% van alle hypotheken in Nederland." required>
+                    </textarea>
+            </div>
+<br>
+            <div class="formitem_url">
+
+                <input type="text" id="url" placeholder="https://stater.nl">
+
+            </div>
+<br>
+            <div class="submit">
+                <input type="submit" value="POST" />
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
