@@ -11,6 +11,7 @@ resources:
 stages:
 - template: pipelines/build/docker-build.yml@templatesRepo
   parameters:
+    containers:
       - containerImageName: yfa-alfabet-frontend
         dockerFilePath: ./alfabet-frontend
       - containerImageName: yfa-alfabet-backend
