@@ -1,0 +1,20 @@
+trigger:
+- master
+
+resources:
+  repositories:
+  - repository: templatesRepo
+    type: git
+    name: Stater/devops-pipelines
+    ref: refs/heads/devops-pipelines/tag/v2
+
+stages:
+- template: pipelines/build/docker-build.yml@templatesRepo
+  parameters:
+      - containerImageName: yfa-alfabet-frontend
+        dockerFilePath: ./alfabet-frontend
+      - containerImageName: yfa-alfabet-backend
+        dockerfilePath: ./alfabet-backend
+      - containerImageName: yfa-alfabet-db
+        dockerfilePath: ./alfabet-db
+
