@@ -13,9 +13,9 @@ extends:
   parameters:
     containers:
       - containerImageName: yfa-alfabet-frontend
-        dockerFilePath: ./alfabet-frontend
+        dockerFilePath: ./alfabet-frontend/Dockerfile
       - containerImageName: yfa-alfabet-backend
-        dockerfilePath: ./alfabet-backend
+        dockerfilePath: ./alfabet-backend/Dockerfile
       - containerImageName: yfa-alfabet-db
-        dockerfilePath: ./alfabet-db
+        dockerfilePath: ./alfabet-db/Dockerfile
 
