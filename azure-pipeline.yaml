@@ -17,5 +17,9 @@ extends:
       - containerImageName: yfa-alfabet-backend
         dockerfilePath: ./alfabet-backend/Dockerfile
       - containerImageName: yfa-alfabet-db
+<<<<<<< HEAD
         dockerfilePath: ./alfabet-db/Dockerfile
 
+=======
+        dockerfilePath: ./alfabet-db
+>>>>>>> fd02d9a (iets met azure pipeline)
